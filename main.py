@@ -16,7 +16,7 @@ watermark_text = None
 #Select the image we want to watermark
 def load_image():
     global img_path
-    img_path = filedialog.askopenfilename(initialdir='/home/alvito/Pictures')
+    img_path = filedialog.askopenfilename(initialdir=f'/home/{os.getlogin()}/Pictures')
     btn_mark_img.config(state="normal")
 
 
